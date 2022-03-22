@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Redis\" />
+    <Folder Include="LiteDB\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Kogel.Dapper.Extension.MySql" Version="3.2.2.2" />
+    <PackageReference Include="LiteDB" Version="5.0.11" />
+    <PackageReference Include="MySql.Data" Version="8.0.28" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sulli.Game.Core\Sulli.Game.Core.csproj" />
+    <ProjectReference Include="..\Sulli.Game.Storage\Sulli.Game.Storage.csproj" />
+  </ItemGroup>
+
+</Project>

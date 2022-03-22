@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.7" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.7" />
+    <PackageReference Include="coverlet.collector" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sulli.Game.Core\Sulli.Game.Core.csproj" />
+    <ProjectReference Include="..\Sulli.Game.Mock\Sulli.Game.Mock.csproj" />
+    <ProjectReference Include="..\Sulli.Game.Server.Connection\Sulli.Game.Server.Connection.csproj" />
+    <ProjectReference Include="..\Sulli.Game.Server\Sulli.Game.Server.csproj" />
+    <ProjectReference Include="..\Sulli.Game.Storage.Layer\Sulli.Game.Storage.Layer.csproj" />
+    <ProjectReference Include="..\Sulli.Game.Storage\Sulli.Game.Storage.csproj" />
+  </ItemGroup>
+
+</Project>
