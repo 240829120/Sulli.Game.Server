@@ -26,7 +26,7 @@ namespace Sulli.Game.Mock
         {
             Student student = new Student();
             student.ID = 1;
-            student.Name = "zhangsan";
+            student.Name = name;
             student.Age = 17;
 
             return student;
